@@ -1,0 +1,12 @@
+<?php 
+	session_start();
+	if(isset($_GET['logout']))
+	{
+		session_destroy();
+		header("Location:loginform.php");
+	}
+	else
+	{
+		header("Location:loginform.php");
+	}
+ ?>
