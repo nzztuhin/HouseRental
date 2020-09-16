@@ -45,8 +45,8 @@
               <td><?php echo $result['userType'];?> </td>
               <td><?php echo $result['Email'];?> </td>
               <td><?php echo $result['Mobile_number'];?> </td>
-              <td><button class="btn-primary btn"><a href="update_user.php?id=<?php echo $result['Id'];?>"class="text-white">Update</a></button></td>
-              <td><button class="btn-danger btn"><a href="delete_user.php?id=<?php echo $result['Id'];?>"class="text-white">Delete</a></button></td>
+              <td><button class="btn-primary btn"><a href="update_user.php?id=<?php echo $result['Id'];?>" class="text-white">Update</a></button></td>
+              <td><button class="btn-danger btn"><a href="delete_user.php?id=<?php echo $result['Id'];?>" class="text-white">Delete</a></button></td>
             
             </tr>
             <?php

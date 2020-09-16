@@ -15,6 +15,7 @@ else{
 		if(( mysqli_num_rows ( $result ) == 1 ))
 		{
 			$_SESSION['user']=$_POST['uname'];
+			//$_SESSION['user_id']=$_POST['Id'];
 			header("Location:welcome.php");
 		}
 	}

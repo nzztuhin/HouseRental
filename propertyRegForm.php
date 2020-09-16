@@ -27,8 +27,10 @@ session_start();
               <div class="form-row">
                 <div class="col-lg-7">
               <?php  if(isset($_SESSION['message'])) 
-                {echo '<div class="alert alert-danger">'.$_SESSION['message'].'</div>';}
-                     session_unset();  ?>
+                {echo '<div class="alert alert-danger">'.$_SESSION['message'].'</div>';
+                //session_unset($_SESSION['message']);
+              }
+                       ?>
 
                 </div>
               </div>
@@ -39,7 +41,7 @@ session_start();
               </div>
               <div class="form-row">
                 <div class="col-lg-7">
-                  <input type="text" placeholder="Property Owner Name" name="poname" class="form-control my-2 p-3">      
+                  <input type="text" value="<?php echo $_SESSION['user'];?>" placeholder="Property Owner Name" name="poname" class="form-control my-2 p-3" readonly>      
                 </div>
               </div>
               <div class="form-row">
