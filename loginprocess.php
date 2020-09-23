@@ -14,9 +14,30 @@ else{
 		$result=mysqli_query($mysqli,$que);
 		if(( mysqli_num_rows ( $result ) == 1 ))
 		{
+			while($row=mysqli_fetch_assoc($result))
+			{
+				if($row["userType"] == '1'){
+
 			$_SESSION['user']=$_POST['uname'];
-			//$_SESSION['user_id']=$_POST['Id'];
-			header("Location:welcome.php");
+			$_SESSION['user_id']=$_POST['Id'];
+			
+			header("Location:welcome.php");}
+
+			
+			elseif ($row["userType"] == '2') {
+			$_SESSION['user']=$_POST['uname'];
+			$_SESSION['user_id']=$_POST['Id'];
+			
+			header("Location:welcome_po.php");
+			}
+			elseif($row["userType"] == '3'){
+			$_SESSION['user']=$_POST['uname'];
+			$_SESSION['user_id']=$_POST['Id'];
+			
+			header("Location:welcome_rt.php");
+			}
+		 	}
+			
 		}
 	}
 }

@@ -63,7 +63,7 @@
     }
   }
   
-  //header("Location:update_user.php");
+  
 
 ?>
 <!doctype html>

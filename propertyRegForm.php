@@ -47,9 +47,9 @@ session_start();
               <div class="form-row">
                 <div class="col-lg-7 " >
                   <select name="potype" class="form-control">
-                  <option value="1">House</option>
-                  <option value="2">Shop</option>
-                  <option value="3">Office</option>
+                  <option value="House">House</option>
+                  <option value="Shop">Shop</option>
+                  <option value="Office">Office</option>
                   </select>    
                 </div>
               </div>
