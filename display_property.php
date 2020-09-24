@@ -1,3 +1,5 @@
+<?php include'home_nav.php'
+?>
 <!doctype html>
 <html lang="en">
   <head>
@@ -16,7 +18,7 @@
       <br><br>
       <h1 class="text-center">Property for rent</h1>
       <br>
-      <input type="text" name="" id="myInput" placeholder="Search Property" onkeyup="searchFun()" class="form-control my-2 p-3"><br>
+      <input type="text" name="" id="myInput" placeholder="Search by Property type" onkeyup="searchFun()" class="form-control my-2 p-3"><br>
       <div class="center-div">
         <table id="myTable" class="table table-striped table-hover tale-bordered">
           <thead class="bg-dark text-white text-center">
@@ -32,7 +34,7 @@
             <th>Rent</th>
           </thead>
           <tbody>
-            <?php
+           <?php
             include 'db_con.php';
             $selectque="SELECT * FROM `property_table` WHERE `Status`='Active'";
             $query=mysqli_query($mysqli,$selectque);
@@ -74,7 +76,7 @@
             let myTable = document.getElementById('myTable');
             let tr = myTable.getElementsByTagName('tr');
             for(var i=0; i<tr.length; i++){
-              let td=tr[i].getElementsByTagName('td')[1];
+              let td=tr[i].getElementsByTagName('td')[3];
               if(td){
                 let textvalue = td.textContent || td.innerHTML;
                 if(textvalue.toUpperCase().indexOf(filter) > -1){
@@ -85,3 +87,4 @@
 
           }
         </script>
+       <?php include'footer.php'?>

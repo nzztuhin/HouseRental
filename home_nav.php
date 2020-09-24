@@ -75,8 +75,8 @@ span{
   <a href="#home" >Home</a>
   <a href="#contact">Contact</a>
   <a href="#About">About</a>
-  <a style="float: right;" href="#about">sign up</a>
-  <a style="float: right;" href="#about">sign in</a>
+  <a style="float: right;" href="#about">Sign up</a>
+  <a style="float: right;" href="#about">Sign in</a>
   <a href="javascript:void(0);" class="icon" onclick="myFunction()">
     <i class="fa fa-bars"></i>
   </a>
@@ -93,6 +93,6 @@ function myFunction() {
   }
 }
 </script>
-
+ 
 </body>
 </html>

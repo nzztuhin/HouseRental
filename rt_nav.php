@@ -71,7 +71,7 @@ span{
 
 <div class="topnav" id="myTopnav">
   <a href="#home">Home</a>
-  <a href="display_property">Property</a>
+  <a href="display_property.php">display property</a>
   <a href="Confirmation"> Confirmation</a>
   <a style="float: right;" href="logout.php">Logout</a>
   

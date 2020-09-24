@@ -5,8 +5,8 @@ session_start();
 if (isset($_POST['submit'])) {
 
 	if(empty($_POST['uname']) || empty($_POST['pass'])){
-		echo "<script>alert('uname or pass incorrect!')</script>";
-		echo "<script>location.href='login.php'</script>";
+		echo "<script>alert('username or password incorrect!')</script>";
+		echo "<script>location.href='loginform.php'</script>";
       	}
 
 else{
@@ -43,7 +43,7 @@ else{
 }
 	else{
 		echo "<script>alert('username or password incorrect!')</script>";
-		echo "<script>location.href='login.php'</script>";
+		echo "<script>location.href='loginform.php'</script>";
 
 	}
 
