@@ -70,9 +70,9 @@ span{
 <body>
 
 <div class="topnav" id="myTopnav">
-  <a href="#home">Home</a>
+  <a href="welcome_po.php">Home</a>
   <a href="propertyRegForm.php">Add property</a>
-  <a href="userreq">Request</a>
+  <a href="pending_property_req.php">Requested property</a>
   
   <a style="float: right;" href="logout.php">Logout</a>
   

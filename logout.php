@@ -1,6 +1,6 @@
 <?php 
 	session_start();
-	if(isset($_GET['logout']))
+	if(isset($_SESSION['user']))
 	{
 		session_destroy();
 		header("Location:loginform.php");

@@ -70,11 +70,11 @@ span{
 <body>
 
 <div class="topnav" id="myTopnav">
-  <a href="#home">Home</a>
+  <a href="welcome.php">Home</a>
   <a href="userinfo.php">User Info</a>
-  <a href="userreq">User Request</a>
-  <a href="propertyinfo">Property</a>
-  <a href="rented">Rented</a>
+  <a href="pending_user.php">Pending User Request</a>
+  <a href="display_property.php">Property</a>
+  <a href="rentalinfo.php">Rental info</a>
   <a style="float: right;" href="logout.php">Logout</a>
   
   <a href="javascript:void(0);" class="icon" onclick="myFunction()">

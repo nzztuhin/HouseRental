@@ -1,3 +1,5 @@
+<?php include'admin_nav.php'
+?>
 <!doctype html>
 <html lang="en">
   <head>
@@ -82,3 +84,4 @@
 
           }
         </script>
+        <?php include'footer.php'?>

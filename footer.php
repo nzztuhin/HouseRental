@@ -14,6 +14,6 @@
 	<title></title>
 </head>
 <body>
-	<footer>Copyright &copy; Tuhin 2020</footer>";
+	<footer>Copyright &copy; Tuhin 2020</footer>
 </body>
 </html>
